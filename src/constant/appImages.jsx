@@ -15,9 +15,13 @@ import brandLogo5 from '../assets/images/brandLogo5.png';
 import aboutimg1 from '../assets/images/aboutimage1.jpg';
 import aboutimg2 from '../assets/images/aboutimage2.jpg';
 import co from '../assets/images/co.jpg';
-
-
-
+import project1 from '../assets/images/project1.jpg';
+import project2 from '../assets/images/project2.jpg';
+import project3 from '../assets/images/project3.jpg';
+import bannarImg from '../assets/images/bannarImg.jpg'
+import pattern from '../assets/images/pattern.png'
+import pattern2 from '../assets/images/pattern2.jpg'
+import contactBg from '../assets/images/contact-bg.jpg'
 
 
 
@@ -41,6 +45,14 @@ export const AppImages = {
     aboutimg1: aboutimg1,
     aboutimg2: aboutimg2,
     co: co,
+    project1:project1,
+    project2:project2,
+    project3:project3,
+    banner:bannarImg,
+    pattern:pattern,
+    pattern2:pattern2,
+    contactBg:contactBg,
+
 
 
 

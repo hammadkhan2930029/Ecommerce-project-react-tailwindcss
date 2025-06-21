@@ -1,0 +1,79 @@
+import { useState, useRef, useEffect } from 'react'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Second_HeaderComponent } from '../components/Home/seacondHeader';
+import { HeaderComponent } from '../components/Home/headerComponent';
+import { Cover } from '../components/Home/cover';
+import { BrandsLogo } from '../components/Home/brandLogoSlider';
+import { AboutCompoent } from '../components/Home/aboutComponent';
+import { Offering } from '../components/Home/offering';
+import { Management } from '../components/Home/management';
+import { ProjectList } from '../components/Home/projectList';
+import { FeedbackComponent } from '../components/Home/feedbackComponent';
+import { BannerComponent } from '../components/Home/banner';
+import { CompanyBenifits } from '../components/Home/benifits';
+import { Loader } from '../components/Loader/loader';
+import { ProgressCards } from '../components/Home/progressCards';
+import { Contact } from '../components/Home/contact';
+import { Blogs } from '../components/Home/blogs';
+import { BannerSection2 } from '../components/Home/bannersection2';
+import { Footer } from '../components/Footer/footer';
+
+export const Home = () => {
+    const navbarRef = useRef(null)
+    const [showTopbar, setShowTopbar] = useState(false);
+    const [isLoader, setIsLoader] = useState(true)
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoader(false)
+
+        }, 2000);
+    }, [])
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (navbarRef.current) {
+                const rect = navbarRef.current.getBoundingClientRect();
+                setShowTopbar(rect.bottom < 0);
+            }
+
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
+    console.log('showtopbar :', showTopbar)
+
+
+    return (
+        <div>
+            {isLoader ? (<Loader />) : (
+
+                <div>
+
+                    {showTopbar && (
+                        <div className='fixed top-0 left-0 w-full z-50'><Second_HeaderComponent /></div>)}
+
+
+                    <HeaderComponent ref={navbarRef} />
+                    <Cover />
+                    <BrandsLogo />
+                    <AboutCompoent />
+                    <Offering />
+                    <Management />
+                    <ProjectList />
+                    <FeedbackComponent />
+                    <BannerComponent />
+                    <CompanyBenifits />
+                    <ProgressCards/>
+                    <Contact/>
+                    <Blogs/>
+                    <BannerSection2/>
+                    <Footer/>
+                </div>
+            )}
+        </div >
+
+
+    )
+}
+

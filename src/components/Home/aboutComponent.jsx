@@ -1,7 +1,6 @@
 import React from "react"
-import { AppImages } from "../../constant/appImages"
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-
+import { AppImages } from "../../constant/appImages";
 
 export const AboutCompoent = () => {
     const leftPoints = [
@@ -26,7 +25,7 @@ export const AboutCompoent = () => {
             <div style={{ padding: 20, }} className="w-full lg:w-1/2 flex flex-col px-4">
                 <div className="bg-gradient-to-r from-orange-400 to-slate-100 w-20 rounded h-1 mb-4" style={{ padding: 3 }}></div>
                 <span className="text-orange-400 text-sm font-bold mb-2" style={{ paddingTop: 10 }}>ABOUT OUR COMPANY</span>
-                <span className="text-black text-3xl md:text-4xl lg:text-6xl font-bold leading-tight mb-4" style={{ paddingTop: 10 }}>Professional IT Experts for Your Tech Solutions</span>
+                <span className="text-black text-3xl md:text-4xl lg:text-6xl font-bold leading-tight mb-4 text-3xl sm:text-5xl md:text-6xl" style={{ paddingTop: 10 }}>Professional IT Experts for Your Tech Solutions</span>
                 <span className="text-black text-sm md:text-base mb-6" style={{ paddingTop: 20 }}>Web designing in a powerful way of just not an only professions, however, in a passion for our Company. We have to a tendency to believe the idea that smart looking of any website is the first impression on visitors just not an only professions</span>
                 {/* Points List */}
                 <div className="flex flex-col md:flex-row justify-between gap-8 border-b-1 border-gray-400" style={{ paddingTop: 20, paddingBottom: 20 }}>

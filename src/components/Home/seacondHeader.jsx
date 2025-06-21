@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AppImages } from '../../constant/appImages';
 import StylishMenuIcon from '../../assets/images/stylishIcon';
-import { MenuDrawer } from '../header/drawer';
+import { MenuDrawer } from './drawer';
 
 export const Second_HeaderComponent = () => {
     const [drawerOpen, setDrawerOpen] = useState(false);

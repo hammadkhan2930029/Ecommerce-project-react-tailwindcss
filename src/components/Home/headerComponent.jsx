@@ -14,8 +14,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import {  useScreenWidth  } from "../../hooks/screenWidth";
 import StylishMenuIcon from "../../assets/images/stylishIcon";
-import { MenuDrawer } from "./drawer";
-
+import { MenuDrawer } from './drawer';
 
 export const HeaderComponent = () => {
 
