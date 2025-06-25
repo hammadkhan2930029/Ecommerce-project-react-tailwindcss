@@ -16,7 +16,7 @@ export const Management = () => {
         dots: false,
         infinite: true,
         arrows: false,
-        speed: 1000,
+        speed: 1500,
         slidesToShow: 6, // Default for large screens
         slidesToScroll: 1,
         autoplay: true,
@@ -77,7 +77,7 @@ export const Management = () => {
                 </Slider>
 
             </div>
-            <div className="w-full flex flex-row lg:flex-row sm:flex-col  md:flex-col justify-center items-center bg-black" style={{ height: screenWidth <= 1024 ? "auto" : '100vh', display: 'flex', flexDirection: screenWidth <= 645 ? 'column' : null }}>
+            <div className="w-full flex flex-row lg:flex-row sm:flex-col  md:flex-col justify-center items-center bg-black p-2" style={{ height: screenWidth <= 1024 ? "auto" : '100vh', display: 'flex', flexDirection: screenWidth <= 645 ? 'column' : null }}>
                 <div>
                     <div className="flex  justify-between items-center w-2/2  px-5 md:px-10 py-5" style={{ height: screenWidth <= 1024 ? "auto" : '100vh' }}>
                         <div className="flex flex-col md:w-2/2 px-2 md:px-5 " style={{ padding: '35px' }}>

@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Second_HeaderComponent } from '../components/Home/seacondHeader';
@@ -22,31 +22,22 @@ import { Footer } from '../components/Footer/footer';
 export const Home = () => {
     const navbarRef = useRef(null)
     const [showTopbar, setShowTopbar] = useState(false);
-    const [isLoader, setIsLoader] = useState(true)
-    useEffect(() => {
-        setTimeout(() => {
-            setIsLoader(false)
-
-        }, 2000);
-    }, [])
+ 
 
     useEffect(() => {
         const handleScroll = () => {
-            if (navbarRef.current) {
-                const rect = navbarRef.current.getBoundingClientRect();
-                setShowTopbar(rect.bottom < 0);
-            }
+            const scrollTop = window.scrollY;
+            setShowTopbar(scrollTop > 100); // Show after scrolling 100px
+        };
 
-        }
-        window.addEventListener('scroll', handleScroll)
-        return () => window.removeEventListener('scroll', handleScroll)
-    }, [])
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
     console.log('showtopbar :', showTopbar)
 
 
     return (
         <div>
-            {isLoader ? (<Loader />) : (
 
                 <div>
 
@@ -64,13 +55,12 @@ export const Home = () => {
                     <FeedbackComponent />
                     <BannerComponent />
                     <CompanyBenifits />
-                    <ProgressCards/>
-                    <Contact/>
-                    <Blogs/>
-                    <BannerSection2/>
-                    <Footer/>
+                    <ProgressCards />
+                    <Contact />
+                    <Blogs />
+                    <BannerSection2 />
+                    <Footer />
                 </div>
-            )}
         </div >
 
 

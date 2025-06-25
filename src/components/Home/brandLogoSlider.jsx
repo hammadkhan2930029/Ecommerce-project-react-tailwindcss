@@ -60,19 +60,35 @@ export const BrandsLogo = () => {
     };
 
     return (
-        <div className="bg-white shadow border-b-2 border-gray-200" style={{ padding: 30 }}>
-            <Slider {...settings}>
-                {carouselItems.map((item, index) => (
-                    <div key={index} className="flex justify-center items-center " style={{ margin: 5 }}>
-                        <img
-                            src={item.image}
-                            alt={`brand-${index}`}
-                            className="w-[200px] h-[150px] object-contain bg-white rounded"
-                            style={{ width: screenWidth <= 480 ? '330px' : screenWidth <= 360 ? "270px" : null, margin: 20, padding: 10, boxShadow: '0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)' }}
-                        />
-                    </div>
-                ))}
-            </Slider>
-        </div>
+       <div className="outline-none focus:outline-none">
+  <Slider {...settings}>
+    {carouselItems.map((item, index) => (
+      <div
+        key={index}
+        className="flex justify-center items-center outline-none focus:outline-none"
+      >
+        <img
+          src={item.image}
+          alt={`brand-${index}`}
+          className="w-[200px] h-[150px] object-contain bg-white rounded outline-none focus:outline-none"
+          style={{
+            width:
+              screenWidth <= 480
+                ? "330px"
+                : screenWidth <= 360
+                ? "270px"
+                : null,
+            margin: 20,
+            padding: 10,
+            boxShadow:
+              "0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
+          }}
+          tabIndex={-1}
+        />
+      </div>
+    ))}
+  </Slider>
+</div>
+
     );
 };

@@ -1,12 +1,14 @@
 import React from "react"
-import { useScreenWidth } from "../../hooks/screenWidth"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { AppImages } from "../../constant/appImages";
 import EastIcon from '@mui/icons-material/East';
+import { useScreenWidth } from "../../hooks/screenWidth";
+import { AppImages } from "../../constant/appImages";
 
-export const ProjectList = () => {
+
+
+export const About_ProjectList = () => {
 
     const projectListImg = [
         { id: '1', image: AppImages.project1, field: 'technology', department: 'it consulting' },
@@ -57,18 +59,15 @@ export const ProjectList = () => {
     };
     return (
         <div >
-            <div className="flex justify-center flex-col bg-gray-200" style={{ padding: '30px' }}>
+            <div className="flex justify-center flex-col bg-gray-200 p-15" >
 
-                <div className="flex flex-col md:flex-row justify-between items-center w-[90%] px-5 md:px-10 py-5" style={{ padding: 20 }}>
-                    <div className="flex flex-col md:w-1/2 px-2 md:px-5" style={{ padding: 20 }}>
-                        <div className="bg-gradient-to-r from-orange-400 to-slate-100 w-20 rounded h-1 mb-3" style={{ padding: 3 }}></div>
-                        <span className="text-orange-400 text-sm font-bold" style={{ paddingTop: 10 }}>Our projects list</span>
-                        <span className="text-black text-3xl md:text-4xl lg:text-6xl font-bold leading-tight mb-4 text-3xl sm:text-5xl md:text-6xl" style={{ paddingTop: 10,  }}>Improve & Enhance The Tech Projects</span>
+                <div className="flex  justify-center items-center w-[100%] px-5 md:px-10 py-5" >
+                    <div className="flex flex-col justify-center items-center md:w-1/2 px-2 md:px-5" >
+                        <div className="bg-gradient-to-r from-orange-400 to-slate-100 w-20 rounded h-1 mb-3" ></div>
+                        <span className="text-orange-400 text-sm font-bold" >Our projects list</span>
+                        <span className="text-black text-3xl text-center md:text-4xl lg:text-6xl font-bold leading-tight mb-4 text-3xl sm:text-5xl md:text-6xl" >Improve & Enhance The Tech Projects</span>
                     </div>
-                    <div style={{ padding: 10, }} className="flex justify-between items-center md:w-1/3 space-x-3 mt-4 md:mt-0">
-                        <span>There are many variations of passages of available but majority have suffered alteration in some form, by humou or randomised words which don't look even slightly believable</span>
-
-                    </div>
+                  
                 </div>
                 <div style={{ padding: '30px' }}>
                     <Slider {...settings}>

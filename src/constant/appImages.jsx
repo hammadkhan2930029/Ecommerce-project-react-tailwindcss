@@ -21,9 +21,10 @@ import project3 from '../assets/images/project3.jpg';
 import bannarImg from '../assets/images/bannarImg.jpg'
 import pattern from '../assets/images/pattern.png'
 import pattern2 from '../assets/images/pattern2.jpg'
-import contactBg from '../assets/images/contact-bg.jpg'
-
-
+import contactBg from '../assets/images/contact-bg.jpg';
+import aboutBanner from '../assets/images/About/aboutBanner.jpg';
+import bannerImg2 from '../assets/images/About/bannerImg2.png'
+import b2 from '../assets/images/About/b2.jpg'
 
 
 
@@ -52,6 +53,9 @@ export const AppImages = {
     pattern:pattern,
     pattern2:pattern2,
     contactBg:contactBg,
+    aboutBanner:aboutBanner,
+    bannerImg2:bannerImg2,
+    b2:b2,
 
 
 

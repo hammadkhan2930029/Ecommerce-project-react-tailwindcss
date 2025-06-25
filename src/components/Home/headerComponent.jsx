@@ -15,8 +15,12 @@ import MenuItem from '@mui/material/MenuItem';
 import {  useScreenWidth  } from "../../hooks/screenWidth";
 import StylishMenuIcon from "../../assets/images/stylishIcon";
 import { MenuDrawer } from './drawer';
+import { useNavigate } from 'react-router-dom';
+
+
 
 export const HeaderComponent = () => {
+    const navigate = useNavigate();
 
 
     const ScreenWidth = useScreenWidth()
@@ -29,28 +33,12 @@ export const HeaderComponent = () => {
         setAnchorEl(null);
     };
     const [drawerOpen, setDrawerOpen] = useState()
-    // -----------------------------------------------------
-    // const navbarRef = useRef(null)
-    // const [showTopbar, setShowTopbar] = useState(false);
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         if (navbarRef.current) {
-    //             const rect = navbarRef.current.getBoundingClientRect();
-    //             setShowTopbar(rect.bottom < 0);
-    //         }
-
-    //     }
-    //     window.addEventListener('scroll', handleScroll)
-    //     return () => window.removeEventListener('scroll', handleScroll)
-    // }, [])
+  
 
 
     return (
         <div>
-            {/* {showTopbar && (
-                <div>
-                    <span>Hello world</span></div>)} */}
+            
             <div >
                 {ScreenWidth > 1024 ? (
                     <div className="w-full flex flex-col md:flex-row shadow-md" >
@@ -105,10 +93,10 @@ export const HeaderComponent = () => {
                             <div className="flex flex-col md:flex-row justifay-between items-center px-4 py-3" style={{ padding: 10 }}>
                                 <div className="flex w-full md:w-4/5 items-center border-r-2 border-gray-200" style={{ padding: 20 }}>
                                     <div className="flex w-full md:w-4/5 gap-8 text-black text-lg">
-                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={handleClick}>Home</span>
+                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={()=> navigate('/')}>Home</span>
 
                                         <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={handleClick}>Shop</span>
-                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={handleClick}>Services</span>
+                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={()=> navigate('/about')}>About</span>
                                         <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={handleClick}>Pages</span>
                                         <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={handleClick}>News</span>
 
