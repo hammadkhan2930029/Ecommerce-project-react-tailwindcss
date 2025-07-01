@@ -49,7 +49,7 @@ export const AboutCompoent = () => {
                 </div>
                 {/* Bottom Buttons Section */}
                 <div style={{ padding: 20 }} className="flex flex-col sm:flex-row  justify-around items-center w-full bt-6 gap-6">
-                    <div style={{ padding: 10 }} className="group relative overflow-hidden w-full sm:w-1/3 flex justify-center rounded bg-orange-500 cursor-pointer">
+                    <div style={{ padding: 10 }} className="group relative overflow-hidden w-full sm:w-1/3 flex justify-center rounded bg-orange-400 cursor-pointer">
                         <div className="absolute inset-0 bg-black scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-in-out z-0"></div>
 
                         <span className="relative z-10 text-lg font-semibold text-black group-hover:text-white transition-colors duration-300">Explore now</span>

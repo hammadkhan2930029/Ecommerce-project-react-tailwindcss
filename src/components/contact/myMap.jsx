@@ -2,7 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 export const MyMap = () => (
-  <MapContainer center={[24.8607, 67.0011]} zoom={13} className='w-full h-[400px]'>
+  <MapContainer center={[24.8607, 67.0011]} zoom={13} className='w-full h-[400px] shadow-2xl'>
     <TileLayer
       attribution='&copy; OpenStreetMap contributors'
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

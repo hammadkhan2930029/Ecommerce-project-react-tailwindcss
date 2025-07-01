@@ -99,6 +99,8 @@ export const HeaderComponent = () => {
                                         <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={()=> navigate('/about')}>About</span>
                                         <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={handleClick}>Pages</span>
                                         <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={()=> navigate('/contact')}>Contact</span>
+                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={()=> navigate('/faqs')}>FAQs</span>
+
 
                                     </div>
                                     <div>
@@ -126,8 +128,13 @@ export const HeaderComponent = () => {
                                 </div>
 
                                 <div className="flex justify-center items-center gap-4 mt-3 md:mt-0 md:w-1/5">
-                                    <ShoppingCartIcon className="text-black text-3xl cursor-pointer" />
-                                    <button style={{ padding: 20 }} className="bg-orange-400 text-white text-lg md:text-sm  rounded hover:bg-orange-600 cursor-pointer font-semibold">Request a Quote</button>
+                                    <ShoppingCartIcon className="text-black text-4xl cursor-pointer" />
+                                    {/* <button style={{ padding: 20 }} className="bg-orange-400 text-white text-lg md:text-sm  rounded hover:bg-orange-600 cursor-pointer font-semibold">Request a Quote</button> */}
+                                     <div className="group relative overflow-hidden w-[75%] sm:w-[75%] flex justify-center rounded bg-orange-400 cursor-pointer p-4 mt-5">
+                                        <div className="absolute inset-0 bg-black scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-in-out z-0"></div>
+
+                                        <span className="relative z-10 text-md font-semibold text-black group-hover:text-white transition-colors duration-300 uppercase">Request a Quote</span>
+                                    </div>
                                 </div>
 
                             </div>

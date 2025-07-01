@@ -91,6 +91,16 @@ export const MenuDrawer = ({ open, onClose }) => {
                                 <KeyboardArrowRightIcon className='text-white' />
                             </div>
                         </div>
+                         <div className='w-75 flex justify-between items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 group' style={{ padding: 10, marginTop: 10 }}
+                            onClick={() => {
+                                navigate('/faqs')
+                                onClose()
+                            }}>
+                            <span className='text-lg font-semibold uppercase'>FAQs</span>
+                            <div className='flex justify-center items-center bg-black rounded group-hover:bg-orange-400 transition'>
+                                <KeyboardArrowRightIcon className='text-white' />
+                            </div>
+                        </div>
 
 
                     </div>
