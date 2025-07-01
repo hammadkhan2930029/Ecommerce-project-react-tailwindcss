@@ -59,13 +59,13 @@ export const About_ProjectList = () => {
     };
     return (
         <div >
-            <div className="flex justify-center flex-col bg-gray-200 p-15" >
+            <div className="flex justify-center flex-col bg-white p-15" >
 
-                <div className="flex  justify-center items-center w-[100%] px-5 md:px-10 py-5" >
-                    <div className="flex flex-col justify-center items-center md:w-1/2 px-2 md:px-5" >
+                <div className="flex  justify-center items-center w-[100%]" >
+                    <div className="flex flex-col justify-center items-center w-full px-2 md:px-5 lg:w-[60%] md:w-[80%] sm:w-full" >
                         <div className="bg-gradient-to-r from-orange-400 to-slate-100 w-20 rounded h-1 mb-3" ></div>
                         <span className="text-orange-400 text-sm font-bold" >Our projects list</span>
-                        <span className="text-black text-3xl text-center md:text-4xl lg:text-6xl font-bold leading-tight mb-4 text-3xl sm:text-5xl md:text-6xl" >Improve & Enhance The Tech Projects</span>
+                        <span className="text-black text-3xl text-center md:text-4xl lg:text-6xl font-bold leading-tight mb-4  sm:text-4xl " >Recently completed our successful projects</span>
                     </div>
                   
                 </div>

@@ -98,7 +98,7 @@ export const HeaderComponent = () => {
                                         <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={handleClick}>Shop</span>
                                         <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={()=> navigate('/about')}>About</span>
                                         <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={handleClick}>Pages</span>
-                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={handleClick}>News</span>
+                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={()=> navigate('/contact')}>Contact</span>
 
                                     </div>
                                     <div>

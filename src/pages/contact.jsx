@@ -3,15 +3,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Second_HeaderComponent } from '../components/Home/seacondHeader';
 import { HeaderComponent } from '../components/Home/headerComponent';
-
 import { Footer } from '../components/Footer/footer';
-import { AboutCompoent } from '../components/Home/aboutComponent';
-import { About_ProjectList } from '../components/About/aboutProjectList';
-import { ChoosUs } from '../components/About/choosUs';
-import { TeamMembers } from '../components/About/TeamMember';
-import { AboutBradCrumbs } from '../components/About/aboutBradCrumbs';
+import { ContactBradCrumbs } from '../components/contact/contactBreadCrumbs';
+import { ContactForm } from '../components/contact/contactForm';
+import { MyMap } from '../components/contact/myMap';
 
-export const About = () => {
+
+export const Contact = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
@@ -41,11 +39,9 @@ export const About = () => {
 
 
                 <HeaderComponent ref={navbarRef} />
-                <AboutBradCrumbs />
-                <AboutCompoent />
-                <About_ProjectList />
-                <ChoosUs />
-                <TeamMembers />
+               <ContactBradCrumbs/>
+               <ContactForm/>
+               <MyMap/>
 
                 <Footer />
             </div>

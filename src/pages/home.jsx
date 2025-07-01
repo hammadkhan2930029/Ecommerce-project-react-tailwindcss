@@ -20,6 +20,9 @@ import { BannerSection2 } from '../components/Home/bannersection2';
 import { Footer } from '../components/Footer/footer';
 
 export const Home = () => {
+     useEffect(() => {
+            window.scrollTo(0, 0)
+        }, [])
     const navbarRef = useRef(null)
     const [showTopbar, setShowTopbar] = useState(false);
  
