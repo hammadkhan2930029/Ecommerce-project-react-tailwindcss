@@ -1,8 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Second_HeaderComponent } from '../components/Home/seacondHeader';
-import { HeaderComponent } from '../components/Home/headerComponent';
 import { Cover } from '../components/Home/cover';
 import { BrandsLogo } from '../components/Home/brandLogoSlider';
 import { AboutCompoent } from '../components/Home/aboutComponent';
@@ -18,14 +16,17 @@ import { Contact } from '../components/Home/contact';
 import { Blogs } from '../components/Home/blogs';
 import { BannerSection2 } from '../components/Home/bannersection2';
 import { Footer } from '../components/Footer/footer';
+import { HeaderComponent } from '../components/Headers/headerComponent';
+import {Second_HeaderComponent}from '../components/Headers/seacondHeader'
+
 
 export const Home = () => {
-     useEffect(() => {
-            window.scrollTo(0, 0)
-        }, [])
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     const navbarRef = useRef(null)
     const [showTopbar, setShowTopbar] = useState(false);
- 
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -42,28 +43,28 @@ export const Home = () => {
     return (
         <div>
 
-                <div>
+            <div>
 
-                    {showTopbar && (
-                        <div className='fixed top-0 left-0 w-full z-50'><Second_HeaderComponent /></div>)}
+                {showTopbar && (
+                    <div className='fixed top-0 left-0 w-full z-50'>< Second_HeaderComponent/></div>)}
 
 
-                    <HeaderComponent ref={navbarRef} />
-                    <Cover />
-                    <BrandsLogo />
-                    <AboutCompoent />
-                    <Offering />
-                    <Management />
-                    <ProjectList />
-                    <FeedbackComponent />
-                    <BannerComponent />
-                    <CompanyBenifits />
-                    <ProgressCards />
-                    <Contact />
-                    <Blogs />
-                    <BannerSection2 />
-                    <Footer />
-                </div>
+                <HeaderComponent ref={navbarRef} />
+                <Cover />
+                <BrandsLogo />
+                <AboutCompoent />
+                <Offering />
+                <Management />
+                <ProjectList />
+                <FeedbackComponent />
+                <BannerComponent />
+                <CompanyBenifits />
+                <ProgressCards />
+                <Contact />
+                <Blogs />
+                <BannerSection2 />
+                <Footer />
+            </div>
         </div >
 
 

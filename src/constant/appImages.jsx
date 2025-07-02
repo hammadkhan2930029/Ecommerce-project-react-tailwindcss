@@ -25,6 +25,13 @@ import contactBg from '../assets/images/contact-bg.jpg';
 import aboutBanner from '../assets/images/About/aboutBanner.jpg';
 import bannerImg2 from '../assets/images/About/bannerImg2.png'
 import b2 from '../assets/images/About/b2.jpg'
+import web from '../assets/images/services/web.jpg'
+import mob from '../assets/images/services/mob.jpg'
+import webApplication from '../assets/images/services/webApplications.jpg'
+import servicIcon1 from '../assets/images/services/servicIcon1.png';
+import servicIcon2 from '../assets/images/services/servicIcon2.png';
+import servicIcon3 from '../assets/images/services/servicIcon3.png';
+import servicesOne from '../assets/images/services/servicesOne.jpg'
 
 
 
@@ -46,16 +53,23 @@ export const AppImages = {
     aboutimg1: aboutimg1,
     aboutimg2: aboutimg2,
     co: co,
-    project1:project1,
-    project2:project2,
-    project3:project3,
-    banner:bannarImg,
-    pattern:pattern,
-    pattern2:pattern2,
-    contactBg:contactBg,
-    aboutBanner:aboutBanner,
-    bannerImg2:bannerImg2,
-    b2:b2,
+    project1: project1,
+    project2: project2,
+    project3: project3,
+    banner: bannarImg,
+    pattern: pattern,
+    pattern2: pattern2,
+    contactBg: contactBg,
+    aboutBanner: aboutBanner,
+    bannerImg2: bannerImg2,
+    b2: b2,
+    webApplication: webApplication,
+    web: web,
+    mob: mob,
+    servicIcon1:servicIcon1,
+    servicIcon2:servicIcon2,
+    servicIcon3:servicIcon3,
+    servicesOne:servicesOne,
 
 
 

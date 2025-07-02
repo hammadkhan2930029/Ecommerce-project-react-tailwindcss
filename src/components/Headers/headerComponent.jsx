@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef,forwardRef } from 'react';
+import React, { useState, useEffect, useRef, forwardRef } from 'react';
 import { AppImages } from "../../constant/appImages"
 import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
@@ -12,11 +12,11 @@ import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import {  useScreenWidth  } from "../../hooks/screenWidth";
+import { useScreenWidth } from "../../hooks/screenWidth";
 import StylishMenuIcon from "../../assets/images/stylishIcon";
-import { MenuDrawer } from './drawer';
+import { MenuDrawer } from '../Home/drawer';
 import { useNavigate } from 'react-router-dom';
-
+import { motion } from 'framer-motion';
 
 
 export const HeaderComponent = () => {
@@ -33,15 +33,19 @@ export const HeaderComponent = () => {
         setAnchorEl(null);
     };
     const [drawerOpen, setDrawerOpen] = useState()
-  
+
 
 
     return (
         <div>
-            
+
             <div >
                 {ScreenWidth > 1024 ? (
-                    <div className="w-full flex flex-col md:flex-row shadow-md" >
+                    <motion.div
+                        initial={{ y: -50, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1 }}
+                        className="w-full flex flex-col md:flex-row shadow-md" >
                         <div className="md:w-1/5 bg-black flex justify-center items-center ">
                             <img src={AppImages.logo} className="w-52 h-22 object-contain " alt="logo" />
 
@@ -93,13 +97,13 @@ export const HeaderComponent = () => {
                             <div className="flex flex-col md:flex-row justifay-between items-center px-4 py-3" style={{ padding: 10 }}>
                                 <div className="flex w-full md:w-4/5 items-center border-r-2 border-gray-200" style={{ padding: 20 }}>
                                     <div className="flex w-full md:w-4/5 gap-8 text-black text-lg">
-                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={()=> navigate('/')}>Home</span>
+                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={() => navigate('/')}>Home</span>
 
-                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={handleClick}>Shop</span>
-                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={()=> navigate('/about')}>About</span>
+                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={()=> navigate('/services')}>Services</span>
+                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={() => navigate('/about')}>About</span>
                                         <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={handleClick}>Pages</span>
-                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={()=> navigate('/contact')}>Contact</span>
-                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={()=> navigate('/faqs')}>FAQs</span>
+                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={() => navigate('/contact')}>Contact</span>
+                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={() => navigate('/faqs')}>FAQs</span>
 
 
                                     </div>
@@ -130,7 +134,7 @@ export const HeaderComponent = () => {
                                 <div className="flex justify-center items-center gap-4 mt-3 md:mt-0 md:w-1/5">
                                     <ShoppingCartIcon className="text-black text-4xl cursor-pointer" />
                                     {/* <button style={{ padding: 20 }} className="bg-orange-400 text-white text-lg md:text-sm  rounded hover:bg-orange-600 cursor-pointer font-semibold">Request a Quote</button> */}
-                                     <div className="group relative overflow-hidden w-[75%] sm:w-[75%] flex justify-center rounded bg-orange-400 cursor-pointer p-4 mt-5">
+                                    <div className="group relative overflow-hidden w-[75%] sm:w-[75%] flex justify-center rounded bg-orange-400 cursor-pointer p-4 mt-5">
                                         <div className="absolute inset-0 bg-black scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-in-out z-0"></div>
 
                                         <span className="relative z-10 text-md font-semibold text-black group-hover:text-white transition-colors duration-300 uppercase">Request a Quote</span>
@@ -142,9 +146,11 @@ export const HeaderComponent = () => {
 
                         </div>
 
-                    </div>
+                    </motion.div>
                 ) : (
-                    <div className="flex justify-between items-center w-full bg-white shadow" style={{ padding: '15px' }}>
+                    <div
+
+                        className="flex justify-between items-center w-full bg-white shadow" style={{ padding: '15px' }}>
                         <div className="md:w-1/5  flex justify-center items-center ">
                             <img src={AppImages.logo2} className="w-38 object-contain" alt="logo" />
 

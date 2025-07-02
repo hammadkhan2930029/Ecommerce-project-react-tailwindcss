@@ -8,10 +8,10 @@ export const ContactBradCrumbs = () => {
                 <div className="flex flex-col items-center p-10">
 
                     <span className=" text-3xl lg:text-6xl md:text-4xl sm:text-2xl font-bold text-white">Contact</span>
-                    <div className="flex items-center justify-between w-[150px] mt-4">
+                    <div className="flex items-center justify-between w-[160px] mt-4">
 
                     <span className="text-md lg:text-xl md:text-lg sm:text-md font-semibold text-white">Home</span>
-                    <ArrowForwardIosIcon sx={{color:'#fff',fontSize:'18px'}} className="text-md"/>
+                    <ArrowForwardIosIcon sx={{color:'#fff',fontSize:'18px'}} />
                     <span className="text-md lg:text-xl md:text-lg sm:text-md font-semibold text-white">Contact</span>
 
                     </div>

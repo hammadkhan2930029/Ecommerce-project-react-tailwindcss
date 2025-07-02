@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Second_HeaderComponent } from '../components/Home/seacondHeader';
-import { HeaderComponent } from '../components/Home/headerComponent';
+import { Second_HeaderComponent } from '../components/Headers/seacondHeader';
+import { HeaderComponent } from '../components/Headers/headerComponent';
 
 import { Footer } from '../components/Footer/footer';
 import { AboutCompoent } from '../components/Home/aboutComponent';

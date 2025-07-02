@@ -44,19 +44,27 @@ export const MenuDrawer = ({ open, onClose }) => {
                         </div>
                     </div>
                     <div className='flex justify-center border-t-1 border-gray-300 flex-col items-center' style={{ marginTop: 20 }}>
-                        <div className='w-75 flex justify-between items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 group' style={{ padding: 10, marginTop: 10 }} onClick={() => {
-                            navigate('/')
-                            onClose()
+                        <div className='w-75 flex justify-between items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 group' style={{ padding: 10, marginTop: 10 }}
+                            onClick={() => {
+                                navigate('/')
+                                onClose()
 
-                        }}>
+                            }}>
                             <span className='text-lg font-semibold uppercase'>Home</span>
                             <div className='flex justify-center items-center bg-black rounded group-hover:bg-orange-400 transition'>
                                 <KeyboardArrowRightIcon className='text-white' />
                             </div>
                         </div>
 
-                        <div className='w-75 flex justify-between items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 group' style={{ padding: 10, marginTop: 10 }} onClick={() => onClose()}>
-                            <span className='text-lg font-semibold uppercase'>Pages</span>
+                        <div
+                            onClick={() => {
+                                navigate('/services')
+                                onClose()
+
+                            }}
+                            className='w-75 flex justify-between items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 group'
+                            style={{ padding: 10, marginTop: 10 }} >
+                            <span className='text-lg font-semibold uppercase'>Services</span>
                             <div className='flex justify-center items-center bg-black rounded group-hover:bg-orange-400 transition'>
                                 <KeyboardArrowRightIcon className='text-white' />
                             </div>
@@ -91,7 +99,7 @@ export const MenuDrawer = ({ open, onClose }) => {
                                 <KeyboardArrowRightIcon className='text-white' />
                             </div>
                         </div>
-                         <div className='w-75 flex justify-between items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 group' style={{ padding: 10, marginTop: 10 }}
+                        <div className='w-75 flex justify-between items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 group' style={{ padding: 10, marginTop: 10 }}
                             onClick={() => {
                                 navigate('/faqs')
                                 onClose()

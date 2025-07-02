@@ -4,12 +4,12 @@ import "slick-carousel/slick/slick-theme.css";
 import { Second_HeaderComponent } from '../components/Headers/seacondHeader';
 import { HeaderComponent } from '../components/Headers/headerComponent';
 import { Footer } from '../components/Footer/footer';
-import { ContactBradCrumbs } from '../components/contact/contactBreadCrumbs';
-import { ContactForm } from '../components/contact/contactForm';
-import { MyMap } from '../components/contact/myMap';
+import { ServicesBradCrumbs } from '../components/Services/servicesBreadCrumbs';
+import { ServicesCards } from '../components/Services/servicesCards';
 
 
-export const Contact = () => {
+
+export const Services = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
@@ -39,9 +39,8 @@ export const Contact = () => {
 
 
                 <HeaderComponent ref={navbarRef} />
-               <ContactBradCrumbs/>
-               <ContactForm/>
-               <MyMap/>
+                <ServicesBradCrumbs />
+                <ServicesCards/>
 
                 <Footer />
             </div>
