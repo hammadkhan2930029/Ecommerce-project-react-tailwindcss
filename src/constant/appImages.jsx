@@ -32,7 +32,7 @@ import servicIcon1 from '../assets/images/services/servicIcon1.png';
 import servicIcon2 from '../assets/images/services/servicIcon2.png';
 import servicIcon3 from '../assets/images/services/servicIcon3.png';
 import servicesOne from '../assets/images/services/servicesOne.jpg'
-
+import slide5 from '../assets/images/services/slide5.jpg'
 
 
 export const AppImages = {
@@ -70,6 +70,7 @@ export const AppImages = {
     servicIcon2:servicIcon2,
     servicIcon3:servicIcon3,
     servicesOne:servicesOne,
+    slide5:slide5,
 
 
 
