@@ -97,13 +97,13 @@ export const HeaderComponent = () => {
                             <div className="flex flex-col md:flex-row justifay-between items-center px-4 py-3" style={{ padding: 10 }}>
                                 <div className="flex w-full md:w-4/5 items-center border-r-2 border-gray-200" style={{ padding: 20 }}>
                                     <div className="flex w-full md:w-4/5 gap-8 text-black text-lg">
-                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={() => navigate('/')}>Home</span>
+                                        <span className="hover:text-orange-400 cursor-pointer  uppercase" onClick={() => navigate('/')}>Home</span>
 
-                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={()=> navigate('/services')}>Services</span>
-                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={() => navigate('/about')}>About</span>
-                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={handleClick}>Pages</span>
-                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={() => navigate('/contact')}>Contact</span>
-                                        <span className="hover:text-orange-400 cursor-pointer font-semibold uppercase" onClick={() => navigate('/faqs')}>FAQs</span>
+                                        <span className="hover:text-orange-400 cursor-pointer  uppercase" onClick={() => navigate('/services')}>Services</span>
+                                        <span className="hover:text-orange-400 cursor-pointer  uppercase" onClick={() => navigate('/about')}>About</span>
+                                        <span className="hover:text-orange-400 cursor-pointer  uppercase" onClick={handleClick}>Pages</span>
+                                        <span className="hover:text-orange-400 cursor-pointer  uppercase" onClick={() => navigate('/contact')}>Contact</span>
+                                        <span className="hover:text-orange-400 cursor-pointer uppercase" onClick={() => navigate('/faqs')}>FAQs</span>
 
 
                                     </div>
