@@ -5,8 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { AppImages } from '../../constant/appImages';
 import SearchIcon from '@mui/icons-material/Search';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import { useNavigate } from 'react-router-dom';
-
+import { useLocation, useNavigate } from 'react-router-dom';
 
 
 
@@ -14,7 +13,7 @@ export const MenuDrawer = ({ open, onClose }) => {
 
 
     const navigate = useNavigate();
-
+    const location = useLocation();
     const isMobile = useMediaQuery('(max-width:600px)');
 
 
@@ -43,8 +42,8 @@ export const MenuDrawer = ({ open, onClose }) => {
                             <SearchIcon className='text-gray-400 text-sm' />
                         </div>
                     </div>
-                    <div className='flex justify-center border-t-1 border-gray-300 flex-col items-center' style={{ marginTop: 20 }}>
-                        <div className='w-75 flex justify-between items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 group' style={{ padding: 10, marginTop: 10 }}
+                    <div className='flex justify-center border-t-1 border-gray-300 flex-col items-center mt-5' >
+                        <div className={`w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4 group ${location.pathname === '/' ? "text-orange-400 border-orange-400" :""}`} 
                             onClick={() => {
                                 navigate('/')
                                 onClose()
@@ -62,22 +61,29 @@ export const MenuDrawer = ({ open, onClose }) => {
                                 onClose()
 
                             }}
-                            className='w-75 flex justify-between items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 group'
-                            style={{ padding: 10, marginTop: 10 }} >
+                           className={`w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4  group ${location.pathname === '/services' ? "text-orange-400 border-orange-400" :""}`}
+                             >
                             <span className='text-lg font-semibold uppercase'>Services</span>
                             <div className='flex justify-center items-center bg-black rounded group-hover:bg-orange-400 transition'>
                                 <KeyboardArrowRightIcon className='text-white' />
                             </div>
                         </div>
 
-                        <div className='w-75 flex justify-between items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 group' style={{ padding: 10, marginTop: 10 }} onClick={() => onClose()}>
-                            <span className='text-lg font-semibold uppercase'>Shop</span>
+                        <div 
+                         className={`w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4  group ${location.pathname === '/productCards' ? "text-orange-400 border-orange-400" :""}`} 
+                            onClick={() => {
+                                navigate('/productCards')
+                                onClose()
+
+                            }}>
+                            <span className='text-lg font-semibold uppercase'>Products</span>
                             <div className='flex justify-center items-center bg-black rounded group-hover:bg-orange-400 transition'>
                                 <KeyboardArrowRightIcon className='text-white' />
                             </div>
                         </div>
 
-                        <div className='w-75 flex justify-between items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 group' style={{ padding: 10, marginTop: 10 }}
+                        <div 
+                        className={`w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4  group ${location.pathname === '/about' ? "text-orange-400 border-orange-400" :""}`} 
                             onClick={() => {
                                 navigate('/about')
                                 onClose()
@@ -89,7 +95,8 @@ export const MenuDrawer = ({ open, onClose }) => {
                             </div>
                         </div>
 
-                        <div className='w-75 flex justify-between items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 group' style={{ padding: 10, marginTop: 10 }}
+                        <div 
+                        className={`w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4  group ${location.pathname === '/contact' ? "text-orange-400 border-orange-400" :""}`} 
                             onClick={() => {
                                 navigate('/contact')
                                 onClose()
@@ -99,7 +106,8 @@ export const MenuDrawer = ({ open, onClose }) => {
                                 <KeyboardArrowRightIcon className='text-white' />
                             </div>
                         </div>
-                        <div className='w-75 flex justify-between items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 group' style={{ padding: 10, marginTop: 10 }}
+                        <div 
+                        className={`w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4  group ${location.pathname === '/faqs' ? "text-orange-400 border-orange-400" :""}`} 
                             onClick={() => {
                                 navigate('/faqs')
                                 onClose()

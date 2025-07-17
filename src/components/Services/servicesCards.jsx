@@ -22,15 +22,32 @@ export const ServicesCards = () => {
                     <div
                         onClick={() => navigate('/servicesDetails')}
                         key={index}
-                        style={{ backgroundImage: `url(${item.img})` }}
-                        className="bg-cover bg-center w-full  sm:w-[100%] md:w-[40%] lg:w-[30%]  h-[200px] md:h-[300px] lg:h-[400px] rounded shadow-[inset_0_0_50px_20px_rgba(0,0,0,0.7)] flex flex-col justify-between cursor-pointer transform transition duration-500 hover:scale-105">
-                        <span className="text-lg lg:text-3xl md:text-2xl sm:text-lg font-bold text-white p-5 ">{item.title}</span>
-                        <div className="flex flex-row justify-center items-center  m-2">
-                            <img src={item.icon} className="bg-orange-400 w-[100px] h-[100px] p-2 rounded" />
-                            <span className="text-white p-2 sm:p-2 md:p-3 lg:p-5 bg-black text-md">{item.description}</span>
+                   
+                       className="relative w-full sm:w-[100%] md:w-[40%] lg:w-[30%] h-[200px] md:h-[300px] lg:h-[400px] rounded shadow-[inset_0_0_50px_20px_rgba(0,0,0,0.7)] flex flex-col justify-between cursor-pointer transform transition duration-500 hover:scale-105 overflow-hidden">
+
+
+                         <div className="absolute inset-0 bg-gray-300"></div>
+
+
+                        <img
+                            src={item.img}
+                            alt={item.title}
+                            loading="lazy"
+                            className="absolute inset-0 w-full h-full object-cover" />
+
+
+                        <div className="relative z-10 flex flex-col justify-between h-full">
+
+                            <span className="text-lg lg:text-3xl md:text-2xl sm:text-lg font-bold text-white p-5 ">{item.title}</span>
+                            <div className="flex flex-row justify-center items-center  m-2">
+                                <img src={item.icon} className="bg-orange-400 w-[100px] h-[100px] p-2 rounded" />
+                                <span className="text-white p-2 sm:p-2 md:p-3 lg:p-5 bg-black text-md">{item.description}</span>
+                            </div>
                         </div>
 
                     </div>
+                  
+
                 ))}
 
             </div>

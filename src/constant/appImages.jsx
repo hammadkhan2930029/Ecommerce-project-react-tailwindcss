@@ -32,7 +32,12 @@ import servicIcon1 from '../assets/images/services/servicIcon1.png';
 import servicIcon2 from '../assets/images/services/servicIcon2.png';
 import servicIcon3 from '../assets/images/services/servicIcon3.png';
 import servicesOne from '../assets/images/services/servicesOne.jpg'
-import slide5 from '../assets/images/services/slide5.jpg'
+import slide5 from '../assets/images/services/slide5.jpg';
+import product1 from '../assets/images/productData/product1.png';
+import product2 from '../assets/images/productData/product2.png';
+import product3 from '../assets/images/productData/product3.png';
+import product4 from '../assets/images/productData/product4.png';
+
 
 
 export const AppImages = {
@@ -71,6 +76,11 @@ export const AppImages = {
     servicIcon3:servicIcon3,
     servicesOne:servicesOne,
     slide5:slide5,
+    product1:product1,
+    product2:product2,
+    product3:product3,
+    product4:product4,
+
 
 
 

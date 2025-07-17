@@ -169,10 +169,10 @@ export const Details = () => {
 
                         </div>
                     </div>
-                    <div className='flex flex-col  p-5'>
+                    <div className='flex flex-col  p-5 w-full sm:w-full md:w-full lg:w-1/2 '>
                         <span className='text-black font-bold text-2xl p-3'>Our benefits</span>
                         <span className='text-black  text-lg p-3'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</span>
-                        <div className='flex flex-row justify-center'>
+                        <div className='flex flex-row justify-start'>
                             <div className='bg-orange-400 p-5 rounded hover:bg-black hover:text-white transform transition duration-500 ease-in-out'>
                                 <Diversity2Icon style={{ fontSize: '32px' }} />
                             </div>
@@ -185,7 +185,7 @@ export const Details = () => {
                             </div>
 
                         </div>
-                        <div className='flex flex-row justify-center mt-2'>
+                        <div className='flex flex-row justify-start mt-2'>
                             <div className='bg-orange-400 p-5 rounded hover:bg-black hover:text-white transform transition duration-500 ease-in-out'>
                                 <Diversity2Icon style={{ fontSize: '32px' }} />
                             </div>

@@ -37,10 +37,10 @@ export const Cover = () => {
                             initial={{ y: -50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 2 }}
-                            className="group relative overflow-hidden w-1/2  sm:w-1/2 md:w-1/3 lg:w-1/4  flex justify-center rounded-md bg-orange-400 cursor-pointer p-5 mt-5">
-                            <div className="absolute inset-0 bg-black scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-in-out z-0"></div>
+                            className="group relative overflow-hidden w-1/2  sm:w-1/2 md:w-1/3 lg:w-1/4  flex justify-center rounded-md bg-orange-400 cursor-pointer p-2 lg:p-5 md:p-4 sm:p-2  mt-5">
+                            <div className="absolute inset-0 bg-black scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-in-out z-0 border-1 border-white rounded-md"></div>
 
-                            <span className="relative z-10 text-lg font-semibold text-black group-hover:text-white transition-colors duration-300 uppercase">Discover More</span>
+                            <span className="relative z-10 text-[16px] lg:text-lg md:text-lg sm:text-[16px] font-semibold text-black group-hover:text-white transition-colors duration-300 uppercase">Discover More</span>
                         </motion.div>
                     </div>
                 </div>
