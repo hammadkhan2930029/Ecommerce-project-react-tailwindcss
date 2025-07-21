@@ -43,7 +43,7 @@ export const MenuDrawer = ({ open, onClose }) => {
                         </div>
                     </div>
                     <div className='flex justify-center border-t-1 border-gray-300 flex-col items-center mt-5' >
-                        <div className={`w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4 group ${location.pathname === '/' ? "text-orange-400 border-orange-400" :""}`} 
+                        <div className={`curosr-pointer w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4 group ${location.pathname === '/' ? "text-orange-400 border-orange-400" :""}`} 
                             onClick={() => {
                                 navigate('/')
                                 onClose()
@@ -61,7 +61,7 @@ export const MenuDrawer = ({ open, onClose }) => {
                                 onClose()
 
                             }}
-                           className={`w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4  group ${location.pathname === '/services' ? "text-orange-400 border-orange-400" :""}`}
+                           className={` curosr-pointer w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4  group ${location.pathname === '/services' ? "text-orange-400 border-orange-400" :""}`}
                              >
                             <span className='text-lg font-semibold uppercase'>Services</span>
                             <div className='flex justify-center items-center bg-black rounded group-hover:bg-orange-400 transition'>
@@ -70,7 +70,7 @@ export const MenuDrawer = ({ open, onClose }) => {
                         </div>
 
                         <div 
-                         className={`w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4  group ${location.pathname === '/productCards' ? "text-orange-400 border-orange-400" :""}`} 
+                         className={` curosr-pointer w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4  group ${location.pathname === '/productCards' ? "text-orange-400 border-orange-400" :""}`} 
                             onClick={() => {
                                 navigate('/productCards')
                                 onClose()
@@ -83,7 +83,7 @@ export const MenuDrawer = ({ open, onClose }) => {
                         </div>
 
                         <div 
-                        className={`w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4  group ${location.pathname === '/about' ? "text-orange-400 border-orange-400" :""}`} 
+                        className={`curosr-pointer w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4  group ${location.pathname === '/about' ? "text-orange-400 border-orange-400" :""}`} 
                             onClick={() => {
                                 navigate('/about')
                                 onClose()
@@ -96,7 +96,7 @@ export const MenuDrawer = ({ open, onClose }) => {
                         </div>
 
                         <div 
-                        className={`w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4  group ${location.pathname === '/contact' ? "text-orange-400 border-orange-400" :""}`} 
+                        className={`curosr-pointer w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4  group ${location.pathname === '/contact' ? "text-orange-400 border-orange-400" :""}`} 
                             onClick={() => {
                                 navigate('/contact')
                                 onClose()
@@ -107,7 +107,7 @@ export const MenuDrawer = ({ open, onClose }) => {
                             </div>
                         </div>
                         <div 
-                        className={`w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4  group ${location.pathname === '/faqs' ? "text-orange-400 border-orange-400" :""}`} 
+                        className={`curosr-pointer w-75 flex justify-between  items-center border-b-1 border-gray-300 hover:text-orange-400 hover:border-orange-400 p-3 mt-4  group ${location.pathname === '/faqs' ? "text-orange-400 border-orange-400" :""}`} 
                             onClick={() => {
                                 navigate('/faqs')
                                 onClose()

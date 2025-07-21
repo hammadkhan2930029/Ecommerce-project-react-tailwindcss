@@ -1,4 +1,5 @@
 import { CartPage } from "../components/products/cart";
+import { CheckOut } from "../components/products/checkOut";
 import { ProductDetails } from "../components/products/productsDetailPage";
 import { About } from "../pages/about";
 import { Contact } from "../pages/contact";
@@ -19,6 +20,8 @@ export const appRouter = [
     { path: '/productCards', element: <ProductCards/> },
     { path: '/productDetail/:id', element: <ProductDetails/> },
     { path: '/cart', element: <CartPage/> },
+    { path: '/checkOut', element: <CheckOut/> },
+
 
 
 
