@@ -34,19 +34,19 @@ export const TeamMembers = () => {
                 </div>
                 <div className=" w-full flex flex-col lg:flex-row flex-wrap sm:flex-col justify-center items-center">
                     {teamMembers.map((item, index) => (
-                        <div className=" w-[100%] lg:w-[22%] md:w-[55%] sm:w-[100%]  mt-5 lg:m-5 border border-black">
+                        <div className=" w-[100%] lg:w-[22%] md:w-[55%] sm:w-[100%]  mt-5 lg:m-5 border-1 border-gray-400 shadow-xl">
                             <div className="group relative w-[100%]  flex justify-center flex-col items-center overflow-hidden">
                                 {/* LEFT ORANGE GRADIENT OVERLAY */}
-                                <div className="absolute inset-0 z-10 bg-gradient-to-r from-orange-500 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out"/>
- <div className="flex justify-end absolute rounded-md inset-0 bg-orange-400 z-20 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out opacity-80 cursor-pointer"/>
+                                <div className="absolute inset-0 z-10 bg-gradient-to-r from-orange-500 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out" />
+                                <div className="flex justify-end absolute rounded-md inset-0 bg-orange-400 z-20 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out opacity-80 cursor-pointer" />
                                 {/* RIGHT SOCIAL ICONS BAR */}
                                 <div className="absolute top-0 right-0 h-full w-10 flex flex-col justify-end items-center gap-4 z-20 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out">
                                     <div className="bg-white flex justify-center flex-col items-center p-2">
-                                    <FacebookIcon className="text-black cursor-pointer "  style={{fontSize:'28px'}}/>
-                                    <TwitterIcon className="text-black cursor-pointer mt-2" style={{fontSize:'28px'}}/>
-                                    <InstagramIcon className="text-black  cursor-pointer mt-2" style={{fontSize:'28px'}}/>
+                                        <FacebookIcon className="text-black cursor-pointer " style={{ fontSize: '28px' }} />
+                                        <TwitterIcon className="text-black cursor-pointer mt-2" style={{ fontSize: '28px' }} />
+                                        <InstagramIcon className="text-black  cursor-pointer mt-2" style={{ fontSize: '28px' }} />
                                     </div>
-                                    
+
                                 </div>
 
                                 {/* MAIN IMAGE */}

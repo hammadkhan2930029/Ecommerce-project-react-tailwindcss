@@ -55,17 +55,17 @@ export const HeaderComponent = () => {
                                 <div className="flex flex-col sm:flex-row gap-4 lg:gap-8 text-sm lg:text-base w-full lg:w-3/4">
                                     <div className="flex items-center gap-1 text-black text-sm ">
                                         <AccessTimeFilledIcon className="text-orange-400 text-sm" />
-                                        <span > Sunday - Friday: 9.am - 8pm</span>
+                                        <span > Monday - Friday: 9 am - 5 pm</span>
                                     </div>
                                     <div className="flex items-center gap-1 text-black text-sm">
                                         <FmdGoodIcon className="text-orange-400 text-sm" />
-                                        <span>  Richardson, California 62639</span>
+                                        <span> Main Rashid Minhas Road, Karachi Pakistan.</span>
 
                                     </div>
 
                                     <div className="flex items-center gap-1 text-sm text-black">
                                         <EmailIcon className="text-sm text-orange-400" />
-                                        <span > needhelp@company.com</span>
+                                        <span > info@cogentdevs.com</span>
 
                                     </div>
 
@@ -76,7 +76,7 @@ export const HeaderComponent = () => {
                                         <div className="bg-orange-400 w-10 h-10 rounded-full flex justify-center items-center">
                                             <CallIcon className="text-white text-lg" />
                                         </div>
-                                        <span className="text-black"> +1234567789</span>
+                                        <span className="text-black"> +92-331-9998780</span>
                                     </div>
                                     {ScreenWidth <= 1290 ? null : (
 

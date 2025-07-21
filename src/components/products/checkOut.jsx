@@ -355,7 +355,7 @@ export const CheckOut = () => {
                             className="group relative overflow-hidden w-full  flex justify-center rounded-lg bg-orange-400 cursor-pointer p-5 mt-10 ">
                                 <div className="absolute inset-0 bg-black scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-in-out z-0"></div>
 
-                                <span className="relative z-10 text-lg font-semibold text-black group-hover:text-white transition-colors duration-300 uppercase">Paynow</span>
+                                <span className="relative z-10 text-lg font-semibold text-black group-hover:text-white transition-colors duration-300 uppercase">Submit</span>
                             </div>
                     </div>
 

@@ -2,7 +2,7 @@ export const footerData = {
   company: {
     name: "Arotech",
     description:
-      "Desires to obtain pain of itself, because it is pain, but occasionally circumstances.",
+      "Your growth is our mission. We dive deep into your business needs and deliver solutions that elevate your success..",
     socials: [
       { icon: "twitter", link: "#" },
       { icon: "facebook", link: "#" },
@@ -29,14 +29,14 @@ export const footerData = {
     {
       title: "Contact",
       items: [
-        "66 Road Broklyn Street, 600 New York, USA",
+        "Mateen Shopping Galaxy, 5th Floor Office # Fi-12, Office Block, Main Rashid Minhas Road, Karachi Pakistan.",
         {
           type: "email",
-          label: "needhelp@company.com",
+          label: "info@cogentdevs.com",
         },
         {
           type: "phone",
-          label: "+11 666 888 0000",
+          label: "+92-331-9998780",
         },
       ],
     },

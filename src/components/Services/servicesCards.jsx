@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import { AppImages } from "../../constant/appImages"
+import { useEffect } from "react"
 
 
 export const ServicesCards = () => {
@@ -13,6 +14,8 @@ export const ServicesCards = () => {
         { img: AppImages.webApplication, title: 'web Applications', description: 'Duis aute irure dolor in reprehenderit in voluptate.', icon: AppImages.servicIcon3 },
 
     ]
+    
+
     return (
 
 
@@ -22,11 +25,11 @@ export const ServicesCards = () => {
                     <div
                         onClick={() => navigate('/servicesDetails')}
                         key={index}
-                   
-                       className="relative w-full sm:w-[100%] md:w-[40%] lg:w-[30%] h-[200px] md:h-[300px] lg:h-[400px] rounded shadow-[inset_0_0_50px_20px_rgba(0,0,0,0.7)] flex flex-col justify-between cursor-pointer transform transition duration-500 hover:scale-105 overflow-hidden">
+
+                        className="relative w-full sm:w-[100%] md:w-[40%] lg:w-[30%] h-[200px] md:h-[300px] lg:h-[400px] rounded shadow-[inset_0_0_50px_20px_rgba(0,0,0,0.7)] flex flex-col justify-between cursor-pointer transform transition duration-500 hover:scale-105 overflow-hidden">
 
 
-                         <div className="absolute inset-0 bg-gray-300"></div>
+                        <div className="absolute inset-0 bg-gray-300"></div>
 
 
                         <img
@@ -46,7 +49,7 @@ export const ServicesCards = () => {
                         </div>
 
                     </div>
-                  
+
 
                 ))}
 
